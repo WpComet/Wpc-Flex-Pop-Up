@@ -1,0 +1,107 @@
+
+#current-uploaded-image, #uploaderSection {	float: left;}
+#uploaderSection {	width: 58%; margin-right:2%}
+#current-uploaded-image {	width: 40%;}
+
+#popup_types_list li { 
+	float: left;
+	width: 32%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+
+#wpcfpu_popup_types_gallery .btn::before {
+    content: "\f078";
+    font-family: FontAwesome;
+	margin-right: 1em
+}
+#wpcfpu_popup_types_gallery .btn.collapsed::before {
+    content: "\f077";
+}
+#wpcfpu_popup_types_gallery div.togglebox {
+	transition: max-height 0.8s;
+	max-height: 12em;
+	overflow: hidden;
+}
+#wpcfpu_popup_types_gallery input.cbox_toggle_i[type="checkbox"]:checked + label.cbox_toggle + div.togglebox {
+	max-height: 999px;
+/*	display: block;*/
+/*    display: block;
+    height: 16em;
+    overflow: hidden;*/
+}
+#popup_types_list a {	position: relative;}
+#popup_types_list img {	display: block;}
+#popup_types_list a .caption {
+	opacity: 0;
+	position: absolute;
+	background: rgba(0,0,0,0.6);
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+	color:#fff;
+	line-height: 10;
+	text-align: center;
+		transition: opacity 400ms;
+
+}
+
+#popup_types_list a:hover .caption {
+	opacity: 1;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	#popup_types_list li { 	width: 24%;	}
+	#wpcfpu_popup_types_gallery div.togglebox {	max-height: 16em;	}
+	
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#popup_types_list li { 	width: 20%;	}
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+	#popup_types_list li { 	width: 16%;	}
+	#wpcfpu_popup_types_gallery div.togglebox {	max-height: 15em;	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	#popup_types_list li { 	width: 10%;	}
+	#wpcfpu_popup_types_gallery div.togglebox {	max-height: 16em;	}
+}
+
+#popup_types_list li a{
+    display: block;
+	border: 0.4em solid #bbb;
+	transition : border 300ms ease-out;
+}
+
+#popup_types_list li a:hover{	border: 0.4em solid #0065cd;
+}
+
+
+.wpcnuk-dndupload .current-uploaded-image {
+	position: relative;
+}
+.wpcnuk-dndupload .current-uploaded-image {
+
+}
+
+.wpcfpu-rel .drag-drop .drag-drop-inside {
+	margin-top: 1em;
+}
+
+.wpcfpu-rel div#uploaderSection div.loading {
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: 50%; left: 50%;
+	margin: -16px 0px 0px -16px;
+	display: none;
+}
+
